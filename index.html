@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="떼껄룩 - 프로필 링크">
+    <meta property="og:description" content="안녕하세요 반가워요 ><">
+    <meta property="og:image" content="공유할 이미지">
+    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
+    <title>르탄이 - 프로필 링크</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');   /* 폰트 설정 */
+        * {
+            font-family: "Pretendard",serif;    
+        }
+
+        body {
+            background-color: #419cb8;
+        }
+        .profile {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 100%;    /* 원 만들기 */
+            border: 2px solid white;
+
+            /* 아래 세 줄의 코드는 항상 붙어다니니 외워두기! */
+            /* background와 안의 내용을 포함해서 중앙 정렬*/
+            background-image: url('cat.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .main {
+            color: white;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .sub {
+            color: white;
+            font-size: 14px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .wrap {   
+            width: 300px;
+
+            margin: 30px auto 0px auto;     /* 시계방향 순서대로 위쪽 여백 30px, 오른쪽 여백 쭉 밀어야 하니까 auto,
+                                               아래 여백 필요x, 왼쪽 여백 auto */
+
+            /* display flex 이 네 줄의 코드는 항상 붙어다님 */
+            /* 안의 내용물을 중앙 정렬 */
+            display: flex;      
+            flex-direction: column;     /* column이냐 raw냐만 바꿔 씀*/
+            justify-content: center;
+            align-items: center;    
+        }
+        .wrap > a {     /* wrap으로 이름붙인 div안에 모든 a태그에 적용해 달라는 뜻 */
+            width: 300px;
+            height: 50px;
+
+            background-color: white;
+            border-radius: 8px;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            font-weight: bold;
+            color: #1f596b;
+
+            display: flex;      
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+
+            text-decoration: none;  /* 하이퍼링크 밑줄 삭제 */
+
+            box-shadow: 3px 3px 5px 0px black; /* 오른쪽 밑으로 그림자 */
+        }
+        .wrap > a:hover {   /* 마우스 커서를 올리면 */
+            background-color: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">떼껄룩</h1>
+        <p class="sub">코딩.. 좋아하세요?</p>
+        <a target="_blank" href="https://naver.com/">네이버</a>
+        <a target="_blank" href="https://comic.naver.com/index">네이버 웹툰</a>
+        <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+        <a target="_blank" href="https://www.netflix.com/browse">넷플릭스</a>   
+    </div>
+</body>
+</html>
